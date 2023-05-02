@@ -75,7 +75,6 @@ public class NetworkManagerUi : MonoBehaviour
                 NetworkManager.Singleton.StartClient();
                 break;
         }
-
     }
 
 }
