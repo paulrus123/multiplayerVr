@@ -6,6 +6,7 @@ public class NoVrSimController : MonoBehaviour
 {
 
     [SerializeField] GameObject vrSim;
+    [SerializeField] GameObject xrOrigin;
     [SerializeField] bool spawnSim;
 
     // Start is called before the first frame update
@@ -15,6 +16,7 @@ public class NoVrSimController : MonoBehaviour
         if(spawnSim && Application.isEditor)
         {
             Instantiate(vrSim, transform);
+            //xrOrigin.SetActive(false);
         }
     }
 }
